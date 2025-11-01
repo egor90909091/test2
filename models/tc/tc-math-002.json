@@ -1,0 +1,24 @@
+{
+  "id": "tc-math-002",
+  "title": "Решение квадратного уравнения с коэффициентом a=0",
+  "author": "Тестировщик 1",
+  "tags": [
+    "created_by_ai",
+    "Math",
+    "Square_equation",
+    "Invalid_Input"
+  ],
+  "status": "Draft",
+  "use_case_id": "UC-001",
+  "levels": [
+    "UnitTesting",
+    "FunctionalTesting"
+  ],
+  "precondition": "Доступно приложение или библиотека с реализованной функцией calculate_roots(a, b, c), которая принимает числовые коэффициенты a, b, c и возвращает корни уравнения.",
+  "actions": [
+    {
+      "step": "Передать в функцию calculate_roots коэффициенты a=0, b=2, c=3.",
+      "expected_res": "Функция возвращает ошибку или исключение, указывающее на недопустимый коэффициент a=0."
+    }
+  ]
+}
