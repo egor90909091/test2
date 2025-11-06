@@ -1,0 +1,28 @@
+{
+  "id": "tc-006",
+  "title": "Проверка кросс-браузерной совместимости формы авторизации",
+  "author": "Senior QA Engineer",
+  "tags": [
+    "created_by_ai",
+    "Cross_Browser",
+    "CompatibilityTesting",
+    "UI_Testing"
+  ],
+  "status": "Draft",
+  "use_case_id": "UC-AUTH-001",
+  "levels": [
+    "CompatibilityTesting",
+    "SystemTesting"
+  ],
+  "precondition": "Доступна страница авторизации в разных браузерах (Chrome, Firefox, Safari, Edge).",
+  "actions": [
+    {
+      "step": "Открыть страницу авторизации в браузере Chrome.",
+      "expected_res": "Все элементы интерфейса (поля «Имя пользователя», «Пароль», кнопка «Войти») отображаются корректно, без смещений или ошибок рендеринга."
+    },
+    {
+      "step": "Повторить шаг в браузере Firefox.",
+      "expected_res": "Интерфейс идентичен отображению в Chrome, функциональность сохраняется."
+    }
+  ]
+}
