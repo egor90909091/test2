@@ -1,0 +1,28 @@
+{
+  "id": "tc-005",
+  "title": "Проверка UI-валидации в реальном времени для поля «Email»",
+  "author": "Senior QA Engineer",
+  "tags": [
+    "created_by_ai",
+    "UI_Validation",
+    "Real_Time",
+    "UsabilityTesting"
+  ],
+  "status": "Draft",
+  "use_case_id": "UC-REG-001",
+  "levels": [
+    "UsabilityTesting",
+    "FunctionalTesting"
+  ],
+  "precondition": "Пользователь находится на странице регистрации. Поле «Email» доступно для ввода.",
+  "actions": [
+    {
+      "step": "Ввести в поле «Email» значение: \"invalid-email\".",
+      "expected_res": "Система немедленно отображает сообщение об ошибке: «Неверный формат email» без необходимости отправки формы."
+    },
+    {
+      "step": "Исправить значение на \"valid@example.com\".",
+      "expected_res": "Сообщение об ошибке исчезает, поле подсвечивается зеленым цветом или отображается галочка валидации."
+    }
+  ]
+}
