@@ -1,0 +1,28 @@
+{
+  "id": "tc-004",
+  "title": "Проверка ответа API при неверных учетных данных",
+  "author": "Senior QA Engineer",
+  "tags": [
+    "created_by_ai",
+    "API_Testing",
+    "Error_Handling",
+    "IntegrationTesting"
+  ],
+  "status": "Draft",
+  "use_case_id": "UC-AUTH-001",
+  "levels": [
+    "IntegrationTesting",
+    "FunctionalTesting"
+  ],
+  "precondition": "Доступно API для авторизации. Пользователь отправляет запрос на авторизацию с неверными учетными данными.",
+  "actions": [
+    {
+      "step": "Отправить POST-запрос к эндпоинту «/api/auth» с телом: { \"username\": \"invalid_user\", \"password\": \"wrong_password\" }.",
+      "expected_res": "API возвращает статус код 401 (Unauthorized) и сообщение: «Неверное имя пользователя или пароль»."
+    },
+    {
+      "step": "Проверить логи сервера.",
+      "expected_res": "В логах не отображается пароль в открытом виде, только хэш или маскированное значение."
+    }
+  ]
+}
