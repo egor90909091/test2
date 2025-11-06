@@ -1,0 +1,5 @@
+{
+  "id": "NFT-003",
+  "description": "Система должна корректно работать на мобильных устройствах",
+  "requirementType": "Functional"
+}
