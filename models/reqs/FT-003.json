@@ -1,0 +1,5 @@
+{
+  "id": "FT-003",
+  "description": "Система должна позволять добавлять товары в корзину",
+  "requirementType": "Functional"
+}
