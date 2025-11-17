@@ -1,0 +1,5 @@
+{
+  "id": "NFT-003",
+  "description": "Поддержка различных типов баз данных через стандартные DSN форматы",
+  "requirementType": "Functional"
+}
