@@ -1,0 +1,5 @@
+{
+  "id": "FT-001",
+  "description": "Проверка вывода DSN (Data Source Name) для корректности подключения к базе данных",
+  "requirementType": "Functional"
+}
