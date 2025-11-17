@@ -1,0 +1,5 @@
+{
+  "id": "NFT-001",
+  "description": "Время выполнения проверки DSN не должно превышать 5 секунд",
+  "requirementType": "Functional"
+}
